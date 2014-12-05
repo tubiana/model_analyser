@@ -12,7 +12,6 @@ red=function(text){
 
 scr_print=function(data,index_min,pdb_name){
   cat("\n **** Best model selector ****\n")
-  cat(typeof(index_min),"\n")
   cat(">> The best model is",red(pdb_name), "\n")
   cat(">> OBJECTIVE FUNCTION value : ",red(data[index_min,6]),"\n")
   
