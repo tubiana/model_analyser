@@ -44,7 +44,7 @@ Create_graph=function(data,index_min){
   par(mfrow=c(1,2), pty = "s")
   barplot(num, col=ccol, ylim=c(ymin,ymax),
           ylab="Objective Function value", xlab="Model Number",
-          main="Objective Function Value for each Modeller models", xpd=FALSE)
+          main="Objective Function Value for each Modeller models", xpd=FALSE, cex.names=0.01)
   legend("topright", fill = c("red","turquoise"),
           legend=c("TOP model","Other models"))
   boxplot(num, main="Boxplot of Objective Function Value", ylab="Objectiv Function Value")
